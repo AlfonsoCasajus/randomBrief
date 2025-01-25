@@ -1,0 +1,201 @@
+body {
+	margin: 0;
+}
+
+.main-container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: #000;
+}
+
+
+/*HEADER INICIO*/
+.header-contaienr {
+	margin: 15px 0;
+	text-align: center;
+}
+
+.header-img {
+	width: 150px
+}
+/*HEADER FIN*/
+
+
+
+
+/*CARTAS INICIO*/
+.cards-container {
+	width: 90%;
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	align-self: center;
+}
+
+.individual-card {
+	height: 500px;
+	width: calc(100% / 3);
+	text-align: center;
+	background-size: 330px 500px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.card-contexto {
+	background-image: url("../img/cartacontexto.jpg");
+}
+.card-marca {
+	background-image: url("../img/cartamarca.jpg");
+}
+.card-ejecucion{
+	background-image: url("../img/cartaejecucion.jpg");
+}
+
+.card-text{
+	width: 180px;
+	position: relative;
+	top: 55%;
+	margin: 0 auto;
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 22px;
+	font-weight: 300;
+}
+/*CARTAS FIN*/
+
+/*BOTON INICIO*/
+.footer-container {
+	margin: 15px;
+	text-align: center;
+}
+
+.footer-btn {
+	padding:6px 35px;
+	background-color:transparent;
+	cursor:pointer;
+	color:white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	text-decoration:none;
+	border-radius:10px;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	border:2.5px solid #ffffff;
+}
+.footer-btn:hover {
+	background-color:transparent;
+}
+.footer-btn:active {
+	border:3.5px solid #d2d2d2;
+	color:#d2d2d2;
+	transform: translate(-50%, -50%);
+}
+/*BOTON FIN*/
+
+
+/*RESPONSIVE INICIO*/
+
+@media (min-width: 1200px) and (max-height: 800px) { 
+	.individual-card {
+		height: 350px;
+		width: 235px;
+		background-size: 235px 350px;
+		margin-bottom: 15px;
+	}
+	.card-text{
+		width: 140px;
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 1200px) and (min-height: 800px) { 
+	.card-contexto {
+		background-image: url("../img/cartacontextochica.jpg");
+	}
+	.card-marca {
+		background-image: url("../img/cartamarcachica.jpg");
+	}
+	.card-ejecucion{
+		background-image: url("../img/cartaejecucionchica.jpg");
+	}
+	.individual-card {
+		height: 180px;
+		width: 450px;
+		background-size: 450px 180px;
+		margin-bottom: 15px;
+	}
+	.card-text{
+		width: 300px;
+		top: 50%;
+	}
+
+}
+
+@media (max-width: 1200px) and (max-height: 800px) { 
+
+	.individual-card {
+		height: 350px;
+		width: 235px;
+		background-size: 230px 350px;
+		margin-bottom: 15px;
+	}
+
+	.card-text{
+		width: 140px;
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 800px) and (max-height: 800px) { 
+	.individual-card {
+		height: 120px;
+		width: 370px;
+		background-size: 370px 120px;
+		margin-bottom: 10px;
+	}
+	.card-contexto {
+		background-image: url("../img/cartacontextochica.jpg");
+	}
+	.card-marca {
+		background-image: url("../img/cartamarcachica.jpg");
+	}
+	.card-ejecucion{
+		background-image: url("../img/cartaejecucionchica.jpg");
+	}
+	.card-text{
+		width: 320px;
+		top: 43%;
+	}
+}
+
+@media (max-width: 500px) and (min-height: 800px) { 
+	.individual-card {
+		height: 130px;
+		width: 350px;
+		background-size: 350px 130px;
+	}
+	.card-text{
+		font-size: 18px;
+		width: 270px;
+		top: 43%;
+	}
+}
+
+@media (max-width: 500px) and (max-height: 800px) { 
+	.individual-card {
+		height: 100px;
+		width: 320px;
+		background-size: 320px 100px;
+	}
+	.card-text{
+		width: 220px;
+		font-size: 14px;
+	}
+}
+
+
+/*RESPOINSIVE FIN*/
